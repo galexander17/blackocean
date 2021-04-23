@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-//import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function About() {
   return (
     <div className="container">
       <Head>
@@ -11,16 +10,13 @@ export default function Home() {
       </Head>
 
       <main className="mainWrapper">
-        <h1 className="title">
-          Welcome to <a href="https://blackocean.us">Black Ocean!</a>
-        </h1>
 
         <p className="description">
-         Creating websites, and your brand.
+       Welcome to the About page.
         </p>
-        <Link href="/About">
+        <Link href="/">
           <p>
-            I develop your website, and your company's brand identity. Let's talk! 
+            Go back to main page
           </p>
         </Link>
       </main>
