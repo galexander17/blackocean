@@ -4,26 +4,38 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="containerMain">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="mainWrapper">
+      <div className="navbar">
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>Studio</li>
+          <li>Contact</li>
+          <li>Merchandise</li>
+        </ul>
+        <image>
+      
+        </image>
+      </div>
+      <div className="mainWrapper">
         <h1 className="title">
           Welcome to <a href="https://blackocean.us">Black Ocean!</a>
         </h1>
 
         <p className="description">
-         Creating websites, and your brand.
+         Developing websites, and your brand.
         </p>
         <Link href="/About">
-          <p>
+          <p className="linkDescription" >
             I develop your website, and your company's brand identity. Let's talk! 
           </p>
         </Link>
-      </main>
+      </div>
     </div>
   )
 }
