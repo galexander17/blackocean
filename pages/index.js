@@ -8,34 +8,30 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
       </Head>
       <div className="navbar">
         <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Studio</li>
-          <li>Contact</li>
-          <li>Merchandise</li>
+          <li><a href="/About">About</a></li>
+          <li><a href="/Services">Services</a></li>
+          <li><a href="/Portfolio">Portfolio</a></li>
+          <li><a href="/Studio">Studio</a></li>
+          <li><a href="/Contact">Contact</a></li>
+          <li><a href="/Merchandise">Merchandise</a></li>
         </ul>
-        <image>
-      
-        </image>
+        <image src="/public/Black Ocean Icon-Large-01.png" alt="image here"></image>
       </div>
-      <div className="mainWrapper">
-        <h1 className="title">
-          Welcome to <a href="https://blackocean.us">Black Ocean!</a>
-        </h1>
-
-        <p className="description">
-         Developing websites, and your brand.
-        </p>
-        <Link href="/About">
-          <p className="linkDescription" >
-            I develop your website, and your company's brand identity. Let's talk! 
+        <div className="mainWrapper">
+          <h1 className="title">
+            Welcome to <br></br>Black Ocean
+          </h1>
+          <p className="description">
+            Your ideas.<br></br>Your passion.<br></br>Your brand.<br></br>Brought to life.
           </p>
-        </Link>
-      </div>
+        </div>
     </div>
   )
 }
