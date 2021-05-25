@@ -9,7 +9,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="mainWrapper">
+      <main className="titleDiv">
 
         <p className="description">
        Welcome to the About page.
