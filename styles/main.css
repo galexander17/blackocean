@@ -1,24 +1,65 @@
-.containerMain {
-  min-height: 100vh;
-  padding: 0 1rem;
-  background-color: black;
-  background-image: url("/blackoceanbackground.png"); 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+/*----------Begin div styling----------*/
+div.main {
+  height: 100vh;
+  position: relative;
 }
 
-.containerMainElements {
-  width: 41%;
-  min-height: 80%;
+div.home {
+  height: 100vh;
+  padding: 2rem 2rem;
+  position: relative;
+  background-image: url("/blackoceanbackground.png"); 
+  background-attachment: relative;
+}
+
+div.homeElements {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  position: relative;
+  justify-content: space-evenly;
   float: right;
-  margin: 8rem 0px 0px 0px;
+  width: 40%;
+  background-color: transparent;
 }
+
+div.about {
+  height: 100vh;
+  padding: 2rem 2rem;
+  position: relative;
+  background: #E8E8E8;
+}
+
+div.aboutElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  float: left;
+  width: 40%;
+  background-color: transparent;
+  margin: 10% 0px 0px 10%;
+  padding: relative;
+}
+
+div.projects {
+  height: 100vh;
+  padding: 2rem 2rem;
+  position: relative;
+  background: #1A1A1A;
+}
+
+div.projectsElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  float: left;
+  width: 40%;
+  background-color: transparent;
+  margin: 10% 0px 0px 10%;
+  padding: relative;
+}
+/*----------End div styling----------*/
+/*----------Begin element styling----------*/
 .navbar {
+  position: relative;
   padding: 25px;
   font-family: 'Roboto', sans-serif;
   background-color: transparent;
@@ -45,50 +86,93 @@ display: block;
 li a:hover {
  text-decoration: underline;
 }
-
-.title {
+/*----------Light colored text elements----------*/
+.titleA {
   line-height: 1;
   font-size: 5rem;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 4px;
 }
 
-.title,
-.description {
+.titleA,
+.descriptionA {
   margin: 2rem 0px 0px 0px;
   text-align: left;
   color: white;
 }
 
-.description {
+.descriptionA {
   width: 70%;
   font-size: 1.50rem;
   font-family: 'Inconsolata', monospace;
 }
+/*----------Dark colored text elements----------*/
+.titleB {
+  line-height: 1;
+  font-size: 5rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 4px;
+}
 
-.btnLearnMore {
+.titleB,
+.descriptionB {
   margin: 2rem 0px 0px 0px;
-  width: 25%;
-  background-color: transparent;
-  color: #E8E8E8;
-  border: solid;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+.descriptionB {
+  width: 70%;
+  font-size: 1.50rem;
+  font-family: 'Inconsolata', monospace;
+}
+/*----------End element styling----------*/
+/*----------Begin button styling----------*/
+.btnA {
+  width: 33%;
+  margin: 2rem 0px 0px 0px;
+  padding: 8px 16px;
   border-radius: 10px;
   border-width: 3px;
+  background-color: transparent;
+  border: solid;
   border-color: #E8E8E8;
-  padding: 8px 16px;
+  color: #E8E8E8;
   font-family: 'Inconsolata', monospace;
   font-size: 20px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
 
-.btnLearnMore:hover {
-  color: black;
+.btnA:hover {
+  color: #1a1a1a;
   background-color: #E8E8E8;
 }
 
-/*@media only screen and (max-width:800px) {
+.btnB {
+  width: 33%;
+  margin: 2rem 0px 0px 0px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border-width: 3px;
+  background-color: transparent;
+  border: solid;
+  border-color: #1a1a1a;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btnB:hover {
+  color: #E8E8E8;
+  background-color: #1a1a1a;
+}
+/*----------End button styling----------*/
+/*----------Begin media queries----------*/
+@media only screen and (max-width:800px) {
   .title {
    color:red;
   }
-}*/
+/*----------End media queries----------*/
+}
