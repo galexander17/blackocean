@@ -10,6 +10,7 @@ div.home {
   position: relative;
   background-image: url("/blackoceanbackground.png"); 
   background-attachment: relative;
+  background-repeat: no-repeat;
 }
 
 div.homeElements {
