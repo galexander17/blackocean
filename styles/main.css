@@ -11,15 +11,21 @@ div.home {
   background-image: url("/blackoceanbackground.png"); 
   background-attachment: relative;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 div.homeElements {
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   float: right;
   width: 40%;
   background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform:translate(0%, -50%);
 }
 
 div.about {
@@ -30,19 +36,22 @@ div.about {
 }
 
 div.aboutElements {
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   float: left;
   width: 40%;
   background-color: transparent;
-  margin: 10% 0px 0px 10%;
   padding: relative;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform:translate(0%, -50%);
 }
 
 div.projects {
   height: 100vh;
-  padding: 2rem 2rem;
   position: relative;
   background: #1A1A1A;
 }
@@ -51,12 +60,47 @@ div.projectsElements {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  float: right;
+  width: 27%;
+  background-color: transparent;
+  padding: relative;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform:translate(0%, -50%);
+}
+
+div.contact {
+  height: 100vh;
+  position: relative;
+  background: #E8E8E8;
+}
+
+div.contactElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   float: left;
   width: 40%;
   background-color: transparent;
-  margin: 10% 0px 0px 10%;
   padding: relative;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform:translate(0%, -50%);
 }
+
+div.contactForm {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  top: 50%;
+  right: 9%;
+  transform:translate(0%, -50%);
+}
+
 /*----------End div styling----------*/
 /*----------Begin element styling----------*/
 .navbar {
@@ -86,6 +130,76 @@ display: block;
 
 li a:hover {
  text-decoration: underline;
+}
+
+.thumbnail {
+  position: relative;
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+.thumbnailImage {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+.thumbnailOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1A1A1A;
+}
+
+.thumbnail:hover .thumbnailOverlay {
+  opacity: 0.90;
+}
+
+.thumbnailText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family:  'Bebas Neue', cursive;
+  font-size: 4rem;
+}
+
+.headshot {
+  height: 50rem;
+  width: 50rem;
+  float: right;
+  position: relative;
+  top: 50%;
+  right: 10%;
+  transform:translate(0%, -50%);
+  background-color: transparent;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5% 0% 0% 0%;
+}
+
+.socialMediaIcons {
+  padding: 0% 5% 0% 0%;
+  height: 8rem;
+  width: 8rem;
 }
 /*----------Light colored text elements----------*/
 .titleA {
@@ -130,7 +244,7 @@ li a:hover {
 /*----------End element styling----------*/
 /*----------Begin button styling----------*/
 .btnA {
-  width: 33%;
+  width: 20%;
   margin: 2rem 0px 0px 0px;
   padding: 8px 16px;
   border-radius: 10px;
@@ -151,7 +265,7 @@ li a:hover {
 }
 
 .btnB {
-  width: 33%;
+  width: 25%;
   margin: 2rem 0px 0px 0px;
   padding: 8px 16px;
   border-radius: 10px;
@@ -170,6 +284,17 @@ li a:hover {
   background-color: #1a1a1a;
 }
 /*----------End button styling----------*/
+/*----------Begin input styling----------*/
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 /*----------Begin media queries----------*/
 @media only screen and (max-width:800px) {
   .title {
