@@ -101,6 +101,26 @@ div.contactForm {
   transform:translate(0%, -50%);
 }
 
+div.footer {
+  height: 50vh;
+  position: relative;
+  background: #1a1a1a;
+}
+
+div.footerElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  float: left;
+  width: 40%;
+  background-color: transparent;
+  padding: relative;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform:translate(0%, -40%);
+}
+
 /*----------End div styling----------*/
 /*----------Begin element styling----------*/
 .navbar {
@@ -200,6 +220,18 @@ li a:hover {
   padding: 0% 5% 0% 0%;
   height: 8rem;
   width: 8rem;
+}
+
+.footerImage {
+  height: 50%;
+  width: 50%;
+}
+
+.socialMediaIconsFooter {
+  display: inline-block;
+  margin: 0 30px 0 0;
+  height: 50px;
+  width: 50px;
 }
 /*----------Light colored text elements----------*/
 .titleA {
