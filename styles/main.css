@@ -5,7 +5,7 @@ div.main {
 }
 
 div.home {
-  height: 100vh;
+  height: 110vh;
   padding: 2rem 2rem;
   position: relative;
   background-image: url("/blackoceanbackground.png"); 
@@ -29,7 +29,7 @@ div.homeElements {
 }
 
 div.about {
-  height: 100vh;
+  height: 110vh;
   padding: 2rem 2rem;
   position: relative;
   background: #E8E8E8;
@@ -51,7 +51,7 @@ div.aboutElements {
 }
 
 div.projects {
-  height: 100vh;
+  height: 110vh;
   position: relative;
   background: #1A1A1A;
 }
@@ -71,7 +71,7 @@ div.projectsElements {
 }
 
 div.contact {
-  height: 100vh;
+  height: 110vh;
   position: relative;
   background: #E8E8E8;
 }
@@ -165,7 +165,7 @@ li a:hover {
 .thumbnailImage {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
 }
 
 .thumbnailOverlay {
@@ -318,15 +318,42 @@ li a:hover {
 /*----------End button styling----------*/
 /*----------Begin input styling----------*/
 input[type=text], textarea {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1rem;
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
+
+textarea {
+  height: 20vh;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
 /*----------Begin media queries----------*/
 @media only screen and (max-width:800px) {
   .title {

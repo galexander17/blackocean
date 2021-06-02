@@ -12,6 +12,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       </Head>
       <div className="home">
         <div className="navbar">
@@ -115,11 +116,13 @@ export default function Home() {
         </div>
         <div class="contactForm">
           <form action="/action_page.php">
-            <input type="text" id="name" name="firstname" placeholder="Your name"></input>
-            <input type="text" id="phone" name="phonenumber" placeholder="Your phone number"></input>
-            <input type="text" id="email" name="emailaddress" placeholder="Your email address"></input>
-            <textarea id="message" name="message" placeholder="Your message"></textarea>
-            <input class="btnB" type="submit" value="Submit"></input>
+            <div class="input-icons">
+              <input type="text" id="name" name="firstname" placeholder="Your name"></input>
+              <input type="text" id="phone" name="phonenumber" placeholder="Your phone number"></input>
+              <input type="text" id="email" name="emailaddress" placeholder="Your email address"></input>
+              <textarea id="message" name="message" placeholder="Your message"></textarea>
+            </div>
+            <input class="btnB" type="submit" value="SUBMIT"></input>
           </form>
         </div>
       </div>
