@@ -122,7 +122,7 @@ export default function Home() {
               <input type="text" id="email" name="emailaddress" placeholder="Your email address"></input>
               <textarea id="message" name="message" placeholder="Your message"></textarea>
             </div>
-            <input class="btnB" type="submit" value="SUBMIT"></input>
+            <button class="btnB"><span>SUBMIT</span></button>
           </form>
         </div>
       </div>
@@ -153,6 +153,27 @@ export default function Home() {
         </div>
         <p class="descriptionA">Copyright 2021-2022 Black Ocean LLC</p>
       </div>
+    </div>
+    <div class="aboutDynamic">
+        <div class="aboutDynamicElements">
+          <h1 class="titleA">
+            What we do
+          </h1>
+          <p class="descriptionA">
+            Design firm specializing in user interfaces. We design websites, mobile applications, and other UI products used to deliver unique customer experiences.<br></br><br></br>
+            We aim to capture, captivate and convert customers through design.
+          </p>
+        </div>
+        <img class="aboutImage" src="/squid.ico"></img>
+        <div class="aboutDynamicElements2">
+          <h1 class="titleA">
+            Why Black<br></br>Ocean? 
+          </h1>
+          <p class="descriptionA">
+            A black ocean represents uncertainty. It represents the unknown, hesitation and loss of direction.<br></br><br></br>
+            We solve for uncertainty in design. We help you discover your voice. We help shine a light on your brand. We guide you towards your next website or app.
+          </p>
+        </div>
     </div>
   </div>
   )
