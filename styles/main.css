@@ -5,7 +5,7 @@ div.main {
 }
 
 div.home {
-  height: 100vh;
+  height: 110vh;
   padding: 2rem 2rem;
   position: relative;
   background-image: url("/blackoceanbackground.png"); 
@@ -29,7 +29,7 @@ div.homeElements {
 }
 
 div.about {
-  height: 100vh;
+  height: 110vh;
   padding: 2rem 2rem;
   position: relative;
   background: #E8E8E8;
@@ -51,7 +51,7 @@ div.aboutElements {
 }
 
 div.projects {
-  height: 100vh;
+  height: 110vh;
   position: relative;
   background: #1A1A1A;
 }
@@ -122,7 +122,7 @@ div.footerElements {
 }
 
 div.aboutDynamic {
-  height: 100vh;
+  height: 110vh;
   position: relative;
   background: #1a1a1a;
 }
